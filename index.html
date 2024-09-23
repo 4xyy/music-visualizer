@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSP-Inspired Music Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h1>ENJOY ;)</h1>
+        <input type="file" id="audioUpload" accept="audio/*">
+        <audio id="audioElement" controls></audio>
+        <canvas id="visualizer"></canvas>
+
+        <!-- Visualizer Mode Buttons -->
+        <div id="visualizerButtons"></div>
+    </div>
+
+    <!-- User Controls Section -->
+    <div id="controls">
+        <label for="colorPicker">Bar Color:</label>
+        <input type="color" id="colorPicker" value="#00ffea">
+        
+        <label for="barWidth">Bar Width:</label>
+        <input type="range" id="barWidth" min="1" max="10" value="5">
+        
+        <label for="particleSize">Particle Size:</label>
+        <input type="range" id="particleSize" min="1" max="20" value="10">
+        
+        <label for="explosionColor">Explosion Color:</label>
+        <input type="color" id="explosionColor" value="#ff0080">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
